@@ -117,7 +117,7 @@ int main(int argv, char** argc){
     }
 
     //bob round
-    for (auto it= bobCards.rbegin();it!=bobCards.rend();++it){
+    for (auto it= bobCards.rbegin();it!=bobCards.rend();--it){
       if(aliceCards.count(*it)){
         cout<<"Bob picked matching card "<<*it<<endl;
         aliceCards.erase(*it);
